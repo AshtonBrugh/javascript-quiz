@@ -13,6 +13,7 @@
     margin-right: 15vw;
     font-size: 1.5vw;
     color:var(--blue);
+    border-radius: 4px;
 }
 
 
@@ -35,11 +36,14 @@
 .choice-text {
     padding-left: 1.7vw;
     padding-right: 1.7vw;
+
 }
 
 .choice-text:hover {
     color:var(--green);
     background-color:var(--blue);
     transition: 0.5s linear;
+    cursor: pointer;
+    
 }
 
