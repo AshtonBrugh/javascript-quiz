@@ -1,0 +1,45 @@
+:root {
+    --blue: #05386B;
+    --cream: #EDF5E1;
+    --green: #5CDB95;
+}
+
+.container {
+    text-align: center;
+    margin-top: 6vw;
+    padding: 6vw;
+    background-color: var(--green);
+    margin-left: 15vw;
+    margin-right: 15vw;
+    font-size: 1.5vw;
+    color:var(--blue);
+}
+
+
+.choice-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.choice-prefix {
+    padding-right: .5vw;
+    padding-left: .5vw;
+    background-color: var(--blue);
+    color:var(--green);
+}
+
+.choice-text {
+    padding-left: 1.7vw;
+    padding-right: 1.7vw;
+}
+
+.choice-text:hover {
+    color:var(--green);
+    background-color:var(--blue);
+    transition: 0.5s linear;
+}
+
