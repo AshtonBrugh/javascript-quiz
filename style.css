@@ -1,0 +1,47 @@
+:root {
+    --blue: #05386B;
+    --cream: #EDF5E1;
+    --green: #5CDB95;
+}
+
+body {
+    background-color: var(--cream);
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.start-quiz {
+    margin-top: 8vw;
+    margin-left: 14vw;
+    margin-right: 14vw;
+    padding: 5vw;
+    text-align: center;
+    background-color: var(--green);
+}
+
+.start-quiz h3 {
+    font-size: 2vw;
+    color:var(--cream);
+
+}
+
+.start-quiz p {
+    font-size: 1.5vw;
+    color:var(--blue);
+
+}
+
+.start-quiz button {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5vw;
+    color: var(--cream);
+    background-color:var(--blue);
+    border: none;
+    padding: 1.1vw;
+}
+
+.start-quiz button:hover {
+    background-color:var(--cream);
+    color:var(--blue);
+    transition: 0.5s linear;
+}
