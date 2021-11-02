@@ -12,6 +12,7 @@
 
 <body>
     
+    <h2 id="timer">60</h2>
     <section>
         <div class="start-quiz">
             <h3>Coding Quiz Challenge</h3>
@@ -20,15 +21,42 @@
                 Keep in mind that incorrect answers will penalize your score/time by ten 
                 seconds! Good luck!</p>
 
-                <a href="game.html" class="btn">Start Quiz</a>
-                <a href="highscores.html" id="highscore-btn" class="btn">High Scores</a>
+                <button id="btn-start" class="btn">Start Quiz</button>
+                <button id="btn-highscore" class="btn">High Scores</button>
                 
         </div>
 
     </section>
 
-    
+  
+    <div class="container">
+        <div id="game" class="justify-center flex-column">
+            <h2 id="question"> What is the correct alert box syntax?</h2>
 
+        <div class="choice-container">
+         <p class="choice-prefix">A  </p>
+        <p class="choice-text" data-number="1">Alert.(message);</p>
+        </div>
+
+        <div class="choice-container">
+            <p class="choice-prefix">B  </p>
+            <p class="choice-text" data-number="2">Alert.window(message);</p>
+        </div>
+
+        <div class="choice-container">
+            <p class="choice-prefix">C  </p>
+            <p class="choice-text" data-number="3">alert("message");</p>
+        </div>
+
+        <div class="choice-container">
+            <p class="choice-prefix">D  </p>
+            <p class="choice-text" data-number="4">window.message("message");</p>
+        </div>
+    </div>
+</div>
+
+    
+<script src="script.js"></script>
 
     
 </body>
