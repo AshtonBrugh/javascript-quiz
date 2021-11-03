@@ -38,7 +38,7 @@ correct: "C"
 }
 ];
 
-
+//starting the timer
 btnStart.addEventListener('click', function() {
    var intervalId = setInterval(function () {
 
@@ -54,12 +54,16 @@ btnStart.addEventListener('click', function() {
         count -= 1;
         timer.textContent = count; }
 
+    //timer appears
     document.getElementById("timer").style.visibility = "visible";
-    document.getElementById("home-page").style.display = "none";
-    document.getElementById("questions").style.visibility = "visible";
-    
 
-        
+    //home page disappears
+    document.getElementById("home-page").style.display = "none";
+
+    //question one appears
+    var questionOne = document.getElementById("questions").style.display = "inherit";
+
+    
     }, 1000)
 
 });

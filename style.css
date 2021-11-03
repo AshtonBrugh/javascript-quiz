@@ -12,6 +12,7 @@
     margin-top: 8vw;
     margin-left: 14vw;
     margin-right: 14vw;
+    margin-bottom: 15vw;
     padding: 5vw;
     text-align: center;
     background-color: var(--green);
@@ -77,24 +78,35 @@
 }
 
 #questions {
-    visibility: hidden;
+    display: none;
     font-size: 2vw;
     background-color: var(--green);
     color: var(--blue);
     text-align: center;
     padding: 2vw;
-    margin: 5vw;
+    margin: 10vw;
     font-weight: bold;
 }
 
 .answers {
-    font-weight:normal;
+    border: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 1rem;
+    border-radius: 4px;
+    margin: .5rem;
+    font-size: 1.4rem;
+    background-color:var(--green);
+    color:var(--blue);
+
 }
 
 .answers:hover {
     cursor: pointer;
-    background-color: var(--cream);
-    transition: 0.5s linear;
-    border-radius: 4px;
-    padding: 1vw;
+    background-color:var(--blue);
+    color:var(--green);
 }
+
+#question-two {
+    display: none;
+}
+
