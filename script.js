@@ -1,9 +1,8 @@
 var btnStart = document.getElementById("btn-start");
 var timer = document.getElementById("timer");
 var count = 45;
-var tracker = ("turn this variable into an array of correct answers");
+var tracker = 10;
 
-                 
 
 
 //starting the timer
@@ -35,15 +34,16 @@ btnStart.addEventListener('click', function() {
 
 });
 
+    //question ONE
 document.querySelectorAll('.answersOne').forEach(item => {
     item.addEventListener('click', event => {
 
         document.getElementById("question-one").style.display = "none";
         document.getElementById("question-two").style.display = "inherit";
-
     })
 });
 
+    //question TWO
 document.querySelectorAll('.answersTwo').forEach(item => {
     item.addEventListener('click', event => {
 
@@ -53,6 +53,7 @@ document.querySelectorAll('.answersTwo').forEach(item => {
     })
 });
 
+    //question THREE
 document.querySelectorAll('.answersThree').forEach(item => {
     item.addEventListener('click', event => {
 
@@ -62,6 +63,7 @@ document.querySelectorAll('.answersThree').forEach(item => {
     })
 });
 
+    //question FOUR
 document.querySelectorAll('.answersFour').forEach(item => {
     item.addEventListener('click', event => {
 
@@ -71,6 +73,7 @@ document.querySelectorAll('.answersFour').forEach(item => {
     })
 });
 
+    //question FIVE
 document.querySelectorAll('.answersFive').forEach(item => {
     item.addEventListener('click', event => {
 
@@ -80,6 +83,7 @@ document.querySelectorAll('.answersFive').forEach(item => {
     })
 });
 
+    //question SIX
 document.querySelectorAll('.answersSix').forEach(item => {
     item.addEventListener('click', event => {
 
@@ -89,6 +93,7 @@ document.querySelectorAll('.answersSix').forEach(item => {
     })
 });
 
+    //question SEVEN
 document.querySelectorAll('.answersSeven').forEach(item => {
     item.addEventListener('click', event => {
 
@@ -98,6 +103,7 @@ document.querySelectorAll('.answersSeven').forEach(item => {
     })
 });
 
+    //question EIGHT
 document.querySelectorAll('.answersEight').forEach(item => {
     item.addEventListener('click', event => {
 
@@ -107,6 +113,7 @@ document.querySelectorAll('.answersEight').forEach(item => {
     })
 });
 
+    //question NINE
 document.querySelectorAll('.answersNine').forEach(item => {
     item.addEventListener('click', event => {
 
@@ -115,6 +122,8 @@ document.querySelectorAll('.answersNine').forEach(item => {
 
     })
 });
+
+    //question TEN
 document.querySelectorAll('.answersTen').forEach(item => {
     item.addEventListener('click', event => {
 
@@ -122,6 +131,38 @@ document.querySelectorAll('.answersTen').forEach(item => {
 
     })
 });
+
+var A1 = document.getElementById("A1")
+          
+    A1.onclick = function() {
+        count -= 4;
+    };
+
+ var B1 = document.getElementById("B1")
+          
+    B1.onclick = function() {
+        console.log("correct")
+    };
+
+var C1 = document.getElementById("C1")
+
+    C1.onclick = function() {
+        count -= 4;
+    }
+
+var D1 = document.getElementById("D1")
+
+    D1.onclick = function() {
+        count -=4;
+    }
+
+
+
+
+    
+
+
+
 
 
 
