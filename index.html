@@ -13,7 +13,7 @@
 <body>
     
     <h2 id="timer">45</h2>
-    <button id="btn-highscore" class="btn">High Scores</button>
+    
 
 
     <section id="home-page">
@@ -121,30 +121,19 @@
 
 <!--high score input-->
 <div id="end">
-<h2 class= "highscore">Enter Your New High Score!</h2>
-<h2 id="placeholder">Placeholder</h2>
+<h2>Enter Your New High Score!</h2>
+<p id="placeholder">Your High Score</p>
     <form>
-        <input
-            type="text"
-            id="userName"
-            placeholder="Your Name"
-            />
+        <input id="userName" placeholder="Your Name"/>
 
-            <button
-             type="submit"
-             id="saveScoreBtn"
-             onclick="saveHighScore(event)"
-             > Save
-             </button>
+            <button id="saveScoreBtn"> Save</button>
 
              <fieldset>
                  <legend>High Scores</legend>
-                 <div id="localStorage"></div>
+                 <div id="highScores"></div>
              </fieldset>
     </form>
     </div>
-
-
 
 <script src="script.js"></script>
 

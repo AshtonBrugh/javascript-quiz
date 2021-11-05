@@ -33,12 +33,6 @@ btnStart.addEventListener('click', function() {
 
 });
 
-//pressing the highscore btn
-highScorebtn.addEventListener('click', function () {
-
-    document.getElementById("home-page").style.display = "none";
-    document.getElementById("end").style.visibility = "visible";
-})
 
     //question ONE
 document.querySelectorAll('.answersOne').forEach(item => {
@@ -144,9 +138,9 @@ document.querySelectorAll('.answersTen').forEach(item => {
     item.addEventListener('click', event => {
 
         document.getElementById("question-ten").style.display = "none";
-        document.getElementById("end").style.visibility = "visible";
+        document.getElementById("end").style.display = "inherit";
 
-        document.getElementById("placeholder").innerHTML = score;
+        document.getElementById("placeholder").innerHTML = score + "/100!!";
 
     })
 });
