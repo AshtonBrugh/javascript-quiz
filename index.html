@@ -21,7 +21,7 @@
             <h3>Coding Quiz Challenge</h3>
             
             <p>Try to answer the following code-related quiz questions within the time limit. 
-                Keep in mind that incorrect answers will penalize your score/time by ten 
+                Keep in mind that incorrect answers will penalize your score/time by five 
                 seconds! Good luck!</p>
 
                 <button id="btn-start" class="btn">Start Quiz</button>        
@@ -117,6 +117,34 @@
 <button id="C10" class="answersTen"> A compiled scripting language.</button> <br>
 <button id="D10" class="answersTen">An object-oriented scripting language </button>
 </section>
+
+
+<!--high score input-->
+<div id="end">
+<h2 class= "highscore">Enter Your New High Score!</h2>
+<h2 id="placeholder">Placeholder</h2>
+    <form>
+        <input
+            type="text"
+            id="userName"
+            placeholder="Your Name"
+            />
+
+            <button
+             type="submit"
+             id="saveScoreBtn"
+             onclick="saveHighScore(event)"
+             > Save
+             </button>
+
+             <fieldset>
+                 <legend>High Scores</legend>
+                 <div id="localStorage"></div>
+             </fieldset>
+    </form>
+    </div>
+
+
 
 <script src="script.js"></script>
 
