@@ -1,8 +1,9 @@
 var btnStart = document.getElementById("btn-start");
 var timer = document.getElementById("timer");
-var count = 45;
+var count = 45;``
 var score = 10;
-var highScorebtn = document.getElementById("btn-highscore")
+var highScore = JSON.parse(window.localStorage.getItem("highScores")) || []; 
+
 
 //starting the timer
 btnStart.addEventListener('click', function() {
@@ -144,6 +145,39 @@ document.querySelectorAll('.answersTen').forEach(item => {
 
     })
 });
+
+function saveHighScore(event){
+    event.preventDefault();
+    var player = document.getElementById("userName").value;
+    var newHighScore = {
+        playerName: player,
+        playerScore: score
+    }
+    console.log(newHighScore);
+    highScore.push(newHighScore);
+    console.log(highScore);
+
+    window.localStorage.setItem("highScores", JSON.stringify(highScore));
+
+    renderHighScores();
+    
+};
+
+function renderHighScores(){
+    var highScoreListEl = document.getElementById("highScoreEl");
+    highScoreListEl.innerHTML = "";
+    for(i = 0; i < highScore.length; i++){
+        var listItemEl = document.createElement("li");
+            listItemEl.textContent = highScore[i].playerName + " - " + highScore[i].playerScore;
+            highScoreListEl.appendChild(listItemEl);
+    }
+};
+
+var saveButton = document.getElementById("saveScoreBtn");
+
+saveButton.addEventListener('click', saveHighScore);
+
+
 
 //question ONE button onclick
 var A1 = document.getElementById("A1")
@@ -372,6 +406,7 @@ var D9 = document.getElementById("D9")
 
     A10.onclick = function() {
         count -=4;
+        clearInterval();
     };
 
 var B10 = document.getElementById("B10")
@@ -391,6 +426,8 @@ var C10 = document.getElementById("C10")
         score += 10;
        
     };
+
+    renderHighScores();
 
 
 
