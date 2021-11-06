@@ -406,7 +406,7 @@ var D9 = document.getElementById("D9")
 
     A10.onclick = function() {
         count -=4;
-        clearInterval();
+        
     };
 
 var B10 = document.getElementById("B10")
